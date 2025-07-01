@@ -1,0 +1,111 @@
+/* General container */
+.cart-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: #333;
+}
+
+/* Empty cart text */
+.empty-text {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #999;
+}
+
+/* Each cart item row */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #fdfdfd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+/* Item name */
+.item-name {
+  flex: 1;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Quantity controls */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qty-controls button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.qty-controls button:hover {
+  background: #1565c0;
+}
+
+/* Quantity number */
+.qty {
+  min-width: 30px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Item price */
+.item-price {
+  font-weight: bold;
+  margin-left: 10px;
+  width: 80px;
+  text-align: right;
+}
+
+/* Remove button */
+.remove-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.remove-btn:hover {
+  color: red;
+}
+
+/* Total price */
+.total {
+  text-align: right;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 600px) {
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .item-price,
+  .qty-controls,
+  .remove-btn {
+    align-self: flex-end;
+  }
+
+  .total {
+    text-align: center;
+  }
+}

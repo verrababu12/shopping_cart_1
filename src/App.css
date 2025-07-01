@@ -1,0 +1,27 @@
+/* Reset box model */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove unwanted scroll */
+html,
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: beige;
+}
+
+/* Container for app */
+.bg-container {
+  min-height: 100vh;
+  background-color: beige;
+  padding: 20px;
+}
+
+/* Optional: Fix flex or grid layout overflowing */
+img,
+input,
+button {
+  max-width: 100%;
+}

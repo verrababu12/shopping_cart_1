@@ -1,0 +1,14 @@
+/* CartPage.css (if using) */
+.cart-page {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.page-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
